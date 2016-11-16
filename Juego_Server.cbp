@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Juego_Server" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win32-Debug">
+				<Option output="Juego_Server_d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="Ws2_32" />
+					<Add library="mingw32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="SDL" />
+				</Linker>
+			</Target>
+			<Target title="Win32-Release">
+				<Option output="Juego_Server" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="Ws2_32" />
+					<Add library="mingw32" />
+					<Add library="user32" />
+					<Add library="gdi32" />
+					<Add library="dxguid" />
+					<Add library="winmm" />
+					<Add library="SDL" />
+				</Linker>
+			</Target>
+			<Target title="Linux-Debug">
+				<Option output="Juego_d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Linux-Release">
+				<Option output="Juego" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="..\Box2D\Box2D" />
+			<Add directory="..\SDL\include" />
+			<Add directory="." />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="." />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="Box2D" />
+			<Add directory="..\SDL\lib" />
+			<Add directory="..\Box2D\Box2D\lib" />
+		</Linker>
+		<Unit filename="..\Box2D\Box2D\Box2D\Box2D.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2ChainShape.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2CircleShape.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2EdgeShape.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2PolygonShape.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\Shapes\b2Shape.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2BroadPhase.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2BroadPhase.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2CollideCircle.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2CollideEdge.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2CollidePolygon.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2Collision.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2Collision.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2Distance.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2Distance.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2DynamicTree.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2DynamicTree.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Collision\b2TimeOfImpact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2BlockAllocator.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2BlockAllocator.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Draw.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Draw.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2GrowableStack.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Math.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Math.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Settings.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Settings.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2StackAllocator.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2StackAllocator.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Timer.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Common\b2Timer.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndCircleContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ChainAndPolygonContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2CircleContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2Contact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2ContactSolver.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndCircleContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2EdgeAndPolygonContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonAndCircleContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Contacts\b2PolygonContact.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2DistanceJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2FrictionJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2GearJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2Joint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2MouseJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2PrismaticJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2PulleyJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2RevoluteJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2RopeJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2WeldJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\Joints\b2WheelJoint.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Body.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Body.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2ContactManager.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Fixture.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Fixture.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Island.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2Island.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2TimeStep.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2World.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2World.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Dynamics\b2WorldCallbacks.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Rope\b2Rope.cpp">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="..\Box2D\Box2D\Box2D\Rope\b2Rope.h">
+			<Option target="Linux-Debug" />
+			<Option target="Linux-Release" />
+		</Unit>
+		<Unit filename="Common.h" />
+		<Unit filename="Listener.h" />
+		<Unit filename="Timer.h" />
+		<Unit filename="common.cpp" />
+		<Unit filename="main_server.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

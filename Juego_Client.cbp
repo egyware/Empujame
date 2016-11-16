@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Juego_Client" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="Juego_Client_d" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="Juego_Client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="." />
+			<Add directory="..\SDL\include" />
+			<Add directory="..\Box2D\Box2D\" />
+		</Compiler>
+		<Linker>
+			<Add library="Ws2_32" />
+			<Add library="SDL" />
+			<Add library="Box2D" />
+			<Add library="SDL_gfx" />
+			<Add library="SDL_image" />
+			<Add directory="..\SDL\lib" />
+			<Add directory="..\Box2D\Box2D\lib" />
+		</Linker>
+		<Unit filename="Common.h" />
+		<Unit filename="DebugDraw.cpp" />
+		<Unit filename="DebugDraw.h" />
+		<Unit filename="Timer.h" />
+		<Unit filename="common.cpp" />
+		<Unit filename="main_client.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
